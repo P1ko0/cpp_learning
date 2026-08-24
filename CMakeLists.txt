@@ -13,3 +13,7 @@ add_executable(day04_vector day04_vector.cpp)
 add_executable(day04_device day04_device.cpp)
 
 add_executable(day05_class day05_class.cpp)
+
+add_executable(day06_map day06_map.cpp)
+
+add_executable(day06_devicecharge day06_devicecharge.cpp)
