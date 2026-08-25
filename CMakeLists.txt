@@ -17,3 +17,9 @@ add_executable(day05_class day05_class.cpp)
 add_executable(day06_map day06_map.cpp)
 
 add_executable(day06_devicecharge day06_devicecharge.cpp)
+
+add_executable(day07_file day07_file.cpp)
+
+add_executable(day07_time day07_time.cpp)
+
+add_executable(day07_logger day07_logger.cpp Logger.cpp)

@@ -1,0 +1,12 @@
+Device started
+Device started
+Device started
+Device started
+crane01 started
+crane02 alarm
+crane01 started
+crane02 alarm
+crane01 started
+crane02 alarm
+[2026-08-25 21:55:42] crane01 started
+[2026-08-25 21:55:42] crane02 alarm
