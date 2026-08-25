@@ -1,3 +1,4 @@
+#include "Logger.h"
 #include <iostream>
 #include <string>
 
@@ -22,8 +23,20 @@ int main()
     cout << "===== Device Status =====" << endl;
 
     cout << "Device 1: " << device01 << endl;
+    if(device01=="running")
+    Logger::write("running");
+    else
+    Logger::write("stoped");
     cout << "Device 2: " << device02 << endl;
+    if(device02=="running")
+    Logger::write("running");
+    else
+    Logger::write("stoped");
     cout << "Device 3: " << device03 << endl;
+    if(device03=="running")
+    Logger::write("running");
+    else
+    Logger::write("stoped");
 
     return 0;
 }

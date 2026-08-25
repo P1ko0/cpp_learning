@@ -1,9 +1,8 @@
-#include "Logger.h"
-#include <fstream>
-#include <iostream>
-#include <ctime>
-#include <iomanip>
-#include <sstream>
+#include<fstream>
+#include<iostream>
+#include<sstream>
+#include<ctime>
+#include<iomanip>
 
 using namespace std;
 
@@ -25,21 +24,18 @@ string getTime()
     return ss.str();
 }
 
-void Logger::write(string message)
+int main()
 {
-    ofstream file("log.txt",ios::app);
-    if(!file.is_open())
-    {
-        cout<<"fail to open"<<endl;
-        return;
-    }
+    ofstream file("device_log.csv", ios::app);
 
-    file 
-    << "["
-    << getTime()
-    << "] "
-    << message
-    << endl;
+if (!file.is_open())
+{
+    cout << "Failed to open file." << endl;
+    return 1;
+}
 
-    file.close();
+file << getTime() << ","
+     << "Device1" << ","
+     << "fault"
+     << endl;
 }

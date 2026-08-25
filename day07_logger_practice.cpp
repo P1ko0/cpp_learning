@@ -1,13 +1,12 @@
-#include "Logger.h"
-#include <fstream>
 #include <iostream>
 #include <ctime>
-#include <iomanip>
 #include <sstream>
+#include <iomanip>
+#include <string>
 
 using namespace std;
 
-string getTime()
+string getCurrentTime()
 {
     time_t now = time(nullptr);
 
@@ -25,21 +24,9 @@ string getTime()
     return ss.str();
 }
 
-void Logger::write(string message)
+int main()
 {
-    ofstream file("log.txt",ios::app);
-    if(!file.is_open())
-    {
-        cout<<"fail to open"<<endl;
-        return;
-    }
+    cout << getCurrentTime() << endl;
 
-    file 
-    << "["
-    << getTime()
-    << "] "
-    << message
-    << endl;
-
-    file.close();
+    return 0;
 }

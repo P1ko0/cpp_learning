@@ -9,7 +9,7 @@ class Logger
 {
 public:
 
-    void write(string message);
+    static void write(string message);
 
 };
 
