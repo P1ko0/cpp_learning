@@ -27,3 +27,5 @@ add_executable(day07_logger day07_logger.cpp Logger.cpp)
 add_executable(day07_logger_practice day07_logger_practice.cpp)
 
 add_executable(day07_csv day07_csv.cpp)
+
+add_executable(day08_review day08_review.cpp Logger.cpp)
