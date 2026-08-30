@@ -33,3 +33,7 @@ add_executable(day08_review day08_review.cpp Logger.cpp)
 add_executable(day09_unique_ptr day09_unique_ptr.cpp)
 
 add_executable(day10_virtual day10_virtual.cpp)
+
+add_executable(day11_devicestatusmachine day11_devicestatusmachine.cpp)
+
+add_executable(day12_thread day12_thread.cpp)
