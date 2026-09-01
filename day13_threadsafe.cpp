@@ -11,7 +11,7 @@ mutex mtx;
 
 void updateData()
 {
-    for(int i=0;i<5;i++)
+    for(int i = 0;i < 5;i++)
     {
         {
             lock_guard<mutex> lock(mtx);
@@ -30,8 +30,8 @@ int main()
     {
         {
             lock_guard<mutex> lock(mtx);
-            cout<<"Temperature:"<<temp<<endl;
-            cout<<"Speed:"<<speed<<endl;
+            cout << "Temperature:" << temp << endl;
+            cout << "Speed:" << speed << endl;
         }
         this_thread::sleep_for(chrono::milliseconds(500));
     }

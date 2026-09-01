@@ -39,3 +39,5 @@ add_executable(day11_devicestatusmachine day11_devicestatusmachine.cpp)
 add_executable(day12_thread day12_thread.cpp)
 
 add_executable(day13_threadsafe day13_threadsafe.cpp)
+
+add_executable(day14_Device day14_Device.cpp day14_Logger.cpp day14_Simulator.cpp day14_Devicemain.cpp)
