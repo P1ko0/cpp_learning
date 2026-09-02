@@ -60,12 +60,21 @@ int main()
     d1.showstatus();
     d1.start();
     d1.showstatus();
+    d1.start();
+    d1.showstatus();
     d1.fault();
     d1.showstatus();
-    d1.start();//这里应该失败
+    d1.start();
+    d1.showstatus();
     d1.reset();
     d1.showstatus();
+    d1.stop();
+    d1.showstatus();
     d1.start();
+    d1.showstatus();
+    d1.stop();
+    d1.showstatus();
+    d1.reset();
     d1.showstatus();
 
     return 0;

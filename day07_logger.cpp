@@ -4,9 +4,7 @@ int main()
 {
     Logger logger;
 
-    logger.write("crane01 started");
-
-    logger.write("crane02 alarm");
+    logger.write("Device started");
 
     return 0;
 }
